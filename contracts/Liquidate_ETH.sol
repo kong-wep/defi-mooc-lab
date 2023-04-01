@@ -262,7 +262,7 @@ contract Liquidate_ETH is IUniswapV2Callee {
         assert(msg.sender == address(uniswapV2Pair_WETH_USDC));
         (uint256 reserve_USDC, uint256 reserve_WETH, ) = uniswapV2Pair_WETH_USDC.getReserves(); // Pool3
 
-        console.log("uniswapV2Pair(%s): WBTC <> USDT", address(uniswapV2Pair_WETH_USDC));
+        console.log("uniswapV2Pair(%s): WETH <> USDC", address(uniswapV2Pair_WETH_USDC));
         console.log("reserve WETH: %s", reserve_WETH);
         console.log("reserve USDC: %s", reserve_USDC);
 
